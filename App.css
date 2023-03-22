@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;900&family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700;9..144,900&family=Inconsolata:wght@500;700&family=Lato:wght@400;700&family=Poppins:wght@300&display=swap');
+
+
+.App {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+
+
+.mom-div, .form-login, .register-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Inconsolata', monospace;
+
+
+}
+
+label {
+  text-align: center;
+  padding: 12px;
+  font-size: 20px;
+  color: white;
+  font-family: 'Inconsolata', monospace;
+
+}
+
+input {
+  margin-top: -8%;
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+}
+
+button {
+  border: none;
+  background-color: #7fc5f4;
+  padding: 20px;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 10px;
+  color: white;
+}
+
+.btn-register {
+  margin-top: 15%;
+  transition: all .4s ease-in-out;
+
+}
+
+.btn-login {
+  transition: all .4s ease-in-out;
+
+}
+
+.btn-register:hover, .btn-login:hover {
+  background-position: 100% 0;
+  box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+
+  background-image: linear-gradient(to right, #9599E2, #b0b4f9, #bbbef6, #afb2ec);
+  box-shadow: 0 4px 15px 0 rgba(148, 146, 146, 0.75);
+}
+
+.register-btn {
+  background: none;
+  color: white;
+  text-decoration: underline;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
